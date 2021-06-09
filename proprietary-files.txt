@@ -1,0 +1,19 @@
+
+# APNs
+etc/apns-conf.xml:product/etc/apns-conf.xml
+
+# Bluetooth (AptX)
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+
+# Kernel Power Off Charging (KPOC)
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib/libshowlogo.so
+
+# Media - from RMX2151PU_11_A.75
+vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so
+
