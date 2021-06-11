@@ -16,8 +16,8 @@
 
 DEVICE_PATH := device/realme/RMX2151
 
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+# RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -144,3 +144,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay    
+    
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
+

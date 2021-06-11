@@ -24,6 +24,7 @@ $(call inherit-product, device/realme/RMX2151/device.mk)
 # Inherit some common aosp stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
+
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
